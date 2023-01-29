@@ -1,0 +1,41 @@
+download YetiForceCRM-6.4.0-complete.zip
+unzip on D:\xampp\htdocs
+rename folder to be yetiforce
+update php.ini
+extension=bz2
+extension=curl
+;extension=ffi
+;extension=ftp
+extension=fileinfo
+extension=gd
+extension=gettext
+extension=gmp
+extension=intl
+extension=imap
+extension=ldap
+extension=mbstring
+extension=exif      ; Must be after mbstring as it depends on it
+extension=mysqli
+;extension=oci8_12c  ; Use with Oracle Database 12c Instant Client
+;extension=oci8_19  ; Use with Oracle Database 19 Instant Client
+extension=odbc
+;extension=openssl
+;extension=pdo_firebird
+extension=pdo_mysql
+;extension=pdo_oci
+;extension=pdo_odbc
+;extension=pdo_pgsql
+extension=pdo_sqlite
+;extension=pgsql
+;extension=shmop
+
+
+
+
+#create database yetiforce;
+#create user Yetiforce;
+#grant all on yetiforce.* to 'Yetiforce'@'localhost' identified by 'Yetiforce@123';
+
+restart xampp 
+run http://localhost/yetiforce/install/Install.php
+
